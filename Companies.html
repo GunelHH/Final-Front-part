@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/Images/Logo/apple-touch-icon@2.png"
+      type="image/x-icon"
+    />
+    <title>Best Companies Hiring Developers - Stack Overflow</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <header>
+      <nav class="">
+        <!-- <div class="nav-all"> -->
+        <!-- <div class="container"> -->
+        <div class="nav-all">
+          <div class="nav-burger display-none d-block">
+            <span class="nav-burger__icon"></span>
+            <span class="nav-burger__icon"></span>
+            <span class="nav-burger__icon"></span>
+          </div>
+          <div class="nav-burger-toggle l-0">
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li>
+                Public
+                <ul>
+                  <li>
+                    <a href="">
+                      <iconify-icon icon="bx:world"></iconify-icon>
+                      Questions
+                    </a>
+                  </li>
+                  <li><a href="">Tags</a></li>
+                  <li><a href="">Users</a></li>
+                  <li><a href="">Companies</a></li>
+                </ul>
+              </li>
+              <li>
+                Collectives
+                <iconify-icon icon="bxs:info-circle"></iconify-icon>
+                <ul>
+                  <li>
+                    <a href="">
+                      <iconify-icon
+                        icon="arcticons:questionnaire-star"
+                      ></iconify-icon>
+                      Explore Collectives</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Teams
+                <div class="teams">
+                  <div class="teams-title">
+                    <h4>Stack Overflow for Teams -</h4>
+                  </div>
+                  <div class="teams-desc">
+                    <p>
+                      Start collaborating and sharing organizational knowledge.
+                    </p>
+                  </div>
+                  <div class="teams-image">
+                    <img
+                      src="assets/Images/Teams/teams-illo-free-sidebar-promo.svg"
+                      alt="Stack Overflow For Teams"
+                    />
+                  </div>
+                  <div class="teams-button">
+                    <a href="">Create a free Team</a>
+                  </div>
+                  <div class="teams-why">
+                    <a href="">Why Teams?</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-logo">
+            <a href="Index.html" class="nav-logo__image nav-logo-md-width">
+              <img
+                class="d-640-none"
+                src="assets/Images/Logo/1280px-Stack_Overflow_logo.svg.png"
+                alt="Stackoverflow Logo"
+              />
+              <img
+                class="display-none d-block sm-img"
+                src="assets/Images/Logo/apple-touch-icon@2.png"
+                alt="Stackoverflow Logo"
+              />
+            </a>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li class="d-md-none"><a href="About.html">About</a></li>
+              <li id="products">
+                <a href="">Products</a>
+              </li>
+
+              <div class="products-toggle">
+                <div class="popover-arrow"></div>
+                <ul>
+                  <li>
+                    <a href="">
+                      <span> Stack Overflow </span>
+                      <span> Public questions & answers </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span> Stack Overflow for Teams</span>
+                      <span>
+                        Where deleveopers & technologists share private
+                        knowledge with coworkers</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span>Talent</span>
+                      <span> Build your employer brand</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span> Advertising </span>
+                      <span> Reach developers & technologists worldwide </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""> About the company </a>
+                  </li>
+                </ul>
+              </div>
+              <li class="d-md-none"><a href="ForTeams.html">For Teams</a></li>
+            </ul>
+          </div>
+          <form action="" class="search">
+            <div class="nav-search d-640-none input-sm">
+              <input
+                class="nav-search__input"
+                type="text"
+                placeholder="Search..."
+              />
+              <iconify-icon icon="charm:search"></iconify-icon>
+
+              <div class="popover-arrow__search"></div>
+              <div class="nav-search__input-group">
+                <div class="nav-search__input-group__searchable flex-md-col">
+                  <div class="nav-search__input-group__searchable--flex">
+                    <div
+                      class="nav-search__input-group__searchable--flex--item"
+                    >
+                      <span>[tag]</span>
+                      <span>search within a tag</span>
+                    </div>
+                    <div
+                      class="nav-search__input-group__searchable--flex--item"
+                    >
+                      <span>user:1234</span>
+                      <span>search by author</span>
+                    </div>
+                    <div
+                      class="nav-search__input-group__searchable--flex--item"
+                    >
+                      <span>"words here"</span>
+                      <span>exact phrase</span>
+                    </div>
+                    <div
+                      class="nav-search__input-group__searchable--flex--item"
+                    >
+                      <span>collective:"Name"</span>
+                      <span>collective content</span>
+                    </div>
+                  </div>
+                  <div class="nav-search__input-group__searchable--flex">
+                    <div
+                      class="nav-search__input-group__searchable--flex--item"
+                    >
+                      <span>answers:0</span>
+                      <span>unanswered questions </span>
+                    </div>
+                    <div
+                      class="nav-search__input-group__searchable--flex--item"
+                    >
+                      <span>score:3</span>
+                      <span>post with a 3+ score</span>
+                    </div>
+                    <div
+                      class="nav-search__input-group__searchable--flex--item"
+                    >
+                      <span>is:question</span>
+                      <span>type of post</span>
+                    </div>
+                    <div
+                      class="nav-search__input-group__searchable--flex--item"
+                    >
+                      <span>isaccepted:yes</span>
+                      <span>search within status</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-search__input-group__more">
+                  <div class="nav-search__input-group__more--flex">
+                    <div class="nav-search__input-group__more--flex--item">
+                      <a href="">Ask a question</a>
+                    </div>
+                    <div class="nav-search__input-group__more--flex--item">
+                      <a href="">Search help</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <ul>
+            <li class="display-none d-sm-if icon-sm">
+              <a href="#" class="display-none d-sm-if">
+                <iconify-icon icon="charm:search"></iconify-icon>
+              </a>
+            </li>
+            <li><a class="mtb-sm-6" href="LogIn.html">Log in </a></li>
+            <li><a class="mtb-sm-6" href="SignUp.html">Sign up</a></li>
+          </ul>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+      </nav>
+    </header>
+    <!-- nav end -->
+
+    <main class="container">
+      <div class="container__left-sidebar d-640-none">
+        <div class="container__left-sidebar__sticky">
+          <div class="container__left-sidebar__sticky__nav">
+            <ul>
+              <li>
+                <a href="Index.html">
+                  <div class="d-flex">
+                    <div class="d-flex--item">Home</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <ul>
+                  <li class="fw">Public</li>
+                  <li id="p-o" class="sticky-li">
+                    <a href="">
+                      <iconify-icon icon="bx:world"></iconify-icon>
+                      Questions
+                    </a>
+                  </li>
+                  <li class="sticky-li">
+                    <a href="">
+                      <div class="d-flex">
+                        <div class="d-flex--item">Tags</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sticky-li">
+                    <a href="">
+                      <div class="d-flex">
+                        <div class="d-flex--item">Users</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sticky-li">
+                    <a href="">
+                      <div class="d-flex">
+                        <div class="d-flex--item">Companies</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li id="collectives" class="sticky-li fw">
+                    <div class="sticky-li__collectives">Collectives</div>
+                    <div class="sticky-li__icon">
+                      <a href="">
+                        <iconify-icon icon="bxs:info-circle"></iconify-icon
+                      ></a>
+                    </div>
+                  </li>
+                  <li id="p-o" class="sticky-li">
+                    <a href="">
+                      <iconify-icon
+                        icon="arcticons:questionnaire-star"
+                      ></iconify-icon>
+                      <span>Explore Collectives</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <div class="Teams-title fw">Teams</div>
+                    <div class="Teams-body">
+                      <strong>Stack Overflow for Teams</strong>
+                      - Start collaborating and sharing organizational
+                      knowledge.
+                      <img
+                        width="139"
+                        height="114"
+                        src="assets/Images/Teams/teams-illo-free-sidebar-promo.svg"
+                        alt="Stack Overflow For Teams"
+                      />
+                      <a href="">Create a free Team</a>
+                      <a href="">Why Teams?</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container__main-content w-sm-100 plr-sm-12">
+        <h1>Companies</h1>
+        <p>Learn about what it's like to work at companies</p>
+        <div class="container__main-content__content">
+          <form action="" class="container__main-content__content__search-form">
+            <div class="container__main-content__content__search-form__inputs">
+              <div
+                class="container__main-content__content__search-form__inputs--search-companies"
+              >
+                <div
+                  class="container__main-content__content__search-form__inputs--search-companies__body"
+                >
+                  <label for="c"> Search all companies </label>
+                  <input
+                    id="c"
+                    type="text"
+                    placeholder="Search all companies"
+                    autocomplete="off"
+                    maxlength="120"
+                  />
+                  <iconify-icon icon="fe:search"></iconify-icon>
+                  <span><iconify-icon icon="bi:x"></iconify-icon></span>
+                </div>
+              </div>
+              <div
+                class="container__main-content__content__search-form__inputs--search-by-location"
+              >
+                <div
+                  class="container__main-content__content__search-form__inputs--search-by-location__body"
+                >
+                  <label for="l"> Search company by location </label>
+                  <input
+                    type="text"
+                    placeholder="Search company by location"
+                    id="l"
+                    maxlength="120"
+                    autocomplete="off"
+                  />
+                  <span><iconify-icon icon="bi:x"></iconify-icon></span>
+                </div>
+              </div>
+              <div
+                class="container__main-content__content__search-form__inputs--search-button"
+              >
+                <div
+                  class="container__main-content__content__search-form__inputs--search-button__body"
+                >
+                  <button>Search</button>
+                </div>
+              </div>
+              <div
+                class="container__main-content__content__search-form__inputs--line"
+              ></div>
+              <div
+                class="container__main-content__content__search-form__inputs--filter"
+              >
+                <button type="button">
+                  <span>Filter by tag</span>
+                </button>
+                <div
+                  class="container__main-content__content__search-form__inputs--filter--popover"
+                >
+                  <div
+                    class="container__main-content__content__search-form__inputs--filter--popover--arrow"
+                  ></div>
+                  <fieldset
+                    class="container__main-content__content__search-form__inputs--filter--popover--fields"
+                  >
+                    <div
+                      class="container__main-content__content__search-form__inputs--filter--popover--fields__body"
+                    >
+                      <div
+                        class="container__main-content__content__search-form__inputs--filter--popover--fields__body__flex"
+                      >
+                        <label for="filter-input">
+                          Company tech stack
+                          <p>Add up to ten tech tags</p></label
+                        >
+                        <div
+                          class="container__main-content__content__search-form__inputs--filter--popover--fields__body__flex__wrapper"
+                        >
+                          <input type="text" placeholder="e.g. html, c#" />
+                          <div
+                            class="container__main-content__content__search-form__inputs--filter--popover--fields__body__flex__wrapper__input"
+                          >
+                            <input
+                              type="text"
+                              placeholder="e.g. html, c#"
+                              id="filter-input"
+                              autocomplete="off"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div
+                    class="container__main-content__content__search-form__inputs--filter--popover--buttons"
+                  >
+                    <button class="disabled" type="button">Apply filter</button>
+                    <button id="cancel" type="button">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container__main-content__content__search-form__count">
+              <div
+                class="container__main-content__content__search-form__count__title"
+              >
+                <span>143 companies</span>
+              </div>
+            </div>
+          </form>
+          <div class="container__main-content__content__companies">
+            <div class="container__main-content__content__companies__body">
+              <div
+                class="container__main-content__content__companies__body__list"
+              >
+                <div
+                  class="container__main-content__content__companies__body__list__company"
+                >
+                  <div
+                    class="container__main-content__content__companies__body__list__company--x"
+                  >
+                    <iconify-icon icon="bi:x"></iconify-icon>
+                  </div>
+                  <div
+                    class="container__main-content__content__companies__body__list__company--main"
+                  >
+                    <div
+                      class="container__main-content__content__companies__body__list__company--main--image"
+                    >
+                      <a href="Company-detail.html"
+                        ><img
+                          src="assets/Images/Companies/jmPj2.png"
+                          alt="Company Image"
+                      /></a>
+                    </div>
+                    <div
+                      class="container__main-content__content__companies__body__list__company--main--desc"
+                    >
+                      <h2>
+                        <a href="">Fullscript</a>
+                      </h2>
+                      <div
+                        class="container__main-content__content__companies__body__list__company--main--desc__info"
+                      >
+                        <div
+                          class="container__main-content__content__companies__body__list__company--main--desc__info--location"
+                        >
+                          <iconify-icon icon="bytesize:location"></iconify-icon>
+                          Ottawa; Scottsdale
+                        </div>
+                        <div
+                          class="container__main-content__content__companies__body__list__company--main--desc__info--features"
+                        >
+                          <iconify-icon
+                            icon="icons8:organization"
+                          ></iconify-icon>
+                          Computer Software, eCommerce, Health Care
+                        </div>
+                      </div>
+                      <p>
+                        Fullscript's purpose —helping people get better— is core
+                        to everything we do. We've created a virtual dispensing
+                        solution that supports practitioners as they support
+                        millions of patients across North America with the
+                        industry's best supplements. That said, our purpose
+                        extends well beyond our platform. Helping people get
+                        better is at...
+                      </p>
+                      <div
+                        class="container__main-content__content__companies__body__list__company--main--desc--tags"
+                      >
+                        <a href="">kubernetes</a>
+                        <a href="">c#</a>
+                        <a href="">java</a>
+                        <span>New content</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container__main-content__content__companies__body__list__company"
+                >
+                  <div
+                    class="container__main-content__content__companies__body__list__company--x"
+                  >
+                    <iconify-icon icon="bi:x"></iconify-icon>
+                  </div>
+                  <div
+                    class="container__main-content__content__companies__body__list__company--main"
+                  >
+                    <div
+                      class="container__main-content__content__companies__body__list__company--main--image"
+                    >
+                      <a href="Company-detail.html"
+                        ><img
+                          src="assets/Images/Companies/jmPj2.png"
+                          alt="Company Image"
+                      /></a>
+                    </div>
+                    <div
+                      class="container__main-content__content__companies__body__list__company--main--desc"
+                    >
+                      <h2>
+                        <a href="">Fullscript</a>
+                      </h2>
+                      <div
+                        class="container__main-content__content__companies__body__list__company--main--desc__info"
+                      >
+                        <div
+                          class="container__main-content__content__companies__body__list__company--main--desc__info--location"
+                        >
+                          <iconify-icon icon="bytesize:location"></iconify-icon>
+                          Ottawa; Scottsdale
+                        </div>
+                        <div
+                          class="container__main-content__content__companies__body__list__company--main--desc__info--features"
+                        >
+                          <iconify-icon
+                            icon="icons8:organization"
+                          ></iconify-icon>
+                          Computer Software, eCommerce, Health Care
+                        </div>
+                      </div>
+                      <p>
+                        Fullscript's purpose —helping people get better— is core
+                        to everything we do. We've created a virtual dispensing
+                        solution that supports practitioners as they support
+                        millions of patients across North America with the
+                        industry's best supplements. That said, our purpose
+                        extends well beyond our platform. Helping people get
+                        better is at...
+                      </p>
+                      <div
+                        class="container__main-content__content__companies__body__list__company--main--desc--tags"
+                      >
+                        <a href="">kubernetes</a>
+                        <a href="">c#</a>
+                        <a href="">java</a>
+                        <span>New content</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container__main-content__content__companies__body__list__company"
+                >
+                  <div
+                    class="container__main-content__content__companies__body__list__company--x"
+                  >
+                    <iconify-icon icon="bi:x"></iconify-icon>
+                  </div>
+                  <div
+                    class="container__main-content__content__companies__body__list__company--main"
+                  >
+                    <div
+                      class="container__main-content__content__companies__body__list__company--main--image"
+                    >
+                      <a href="Company-detail.html"
+                        ><img
+                          src="assets/Images/Companies/jmPj2.png"
+                          alt="Company Image"
+                      /></a>
+                    </div>
+                    <div
+                      class="container__main-content__content__companies__body__list__company--main--desc"
+                    >
+                      <h2>
+                        <a href="">Fullscript</a>
+                      </h2>
+                      <div
+                        class="container__main-content__content__companies__body__list__company--main--desc__info"
+                      >
+                        <div
+                          class="container__main-content__content__companies__body__list__company--main--desc__info--location"
+                        >
+                          <iconify-icon icon="bytesize:location"></iconify-icon>
+                          Ottawa; Scottsdale
+                        </div>
+                        <div
+                          class="container__main-content__content__companies__body__list__company--main--desc__info--features"
+                        >
+                          <iconify-icon
+                            icon="icons8:organization"
+                          ></iconify-icon>
+                          Computer Software, eCommerce, Health Care
+                        </div>
+                      </div>
+                      <p>
+                        Fullscript's purpose —helping people get better— is core
+                        to everything we do. We've created a virtual dispensing
+                        solution that supports practitioners as they support
+                        millions of patients across North America with the
+                        industry's best supplements. That said, our purpose
+                        extends well beyond our platform. Helping people get
+                        better is at...
+                      </p>
+                      <div
+                        class="container__main-content__content__companies__body__list__company--main--desc--tags"
+                      >
+                        <a href="">kubernetes</a>
+                        <a href="">c#</a>
+                        <a href="">java</a>
+                        <span>New content</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container__main-content__sidebar pagination-left">
+                <a href="" class="pagination-item" title="Go to page 1">Prev</a>
+                <div class="pagination-item is-selected">1</div>
+                <a href="" class="pagination-item" title="Go to page 2">2</a>
+                <a href="" class="pagination-item" title="Go to page 3">3</a>
+                <a href="" class="pagination-item" title="Go to page 4">4</a>
+                <a href="" class="pagination-item" title="Go to page 5">5</a>
+                <div class="clear">...</div>
+                <a href="" class="pagination-item" title="Go to page 12345"
+                  >12345</a
+                >
+                <a href="" class="pagination-item" title="Go to page 2">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__container p-md-24 p-sm-16">
+        <div class="footer__container__logo d-640-none">
+          <a href="Index.html">
+            <img
+              src="assets/Images/Logo/apple-touch-icon@2.png"
+              alt="Stack Overflow Logo"
+            />
+          </a>
+        </div>
+        <div class="footer__container__nav flex-lg-col">
+          <div class="footer__container__nav--col">
+            <h5 class="mb-md-8">
+              <a href="Index.html">Stack Overflow</a>
+            </h5>
+            <ul class="nav-md-ul">
+              <li><a href="">Questions</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+          <div class="footer__container__nav--col">
+            <h5 class="mb-md-8">
+              <a href="Index.html">Products</a>
+            </h5>
+            <ul class="nav-md-ul">
+              <li><a href="">Teams</a></li>
+              <li><a href="">Advertising</a></li>
+              <li><a href="">Collectives</a></li>
+              <li><a href="">Talent</a></li>
+            </ul>
+          </div>
+          <div class="footer__container__nav--col">
+            <h5 class="mb-md-8">
+              <a href="Index.html">Company</a>
+            </h5>
+            <ul class="nav-md-ul">
+              <li><a href="">About</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">Work Here</a></li>
+              <li><a href="">Legal</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms of Service</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Cookie Settings</a></li>
+              <li><a href="">Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer__container__nav--col">
+            <h5 class="mb-md-8">
+              <a href="Index.html">STACK EXCHANGE NETWORK</a>
+            </h5>
+            <ul class="nav-md-ul">
+              <li><a href="">Technology</a></li>
+              <li><a href="">Culture & recreation</a></li>
+              <li><a href="">Life & arts</a></li>
+              <li><a href="">Science</a></li>
+              <li><a href="">Professional</a></li>
+              <li><a href="">Business</a></li>
+              <li class="mt-3"><a href="">API</a></li>
+              <li><a href="">Data</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__container__copyright">
+          <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.LinkedIn.com">LinkedIn</a></li>
+            <li><a href="https://www.Instagram.com">Instagram</a></li>
+          </ul>
+          <p>
+            Site design / logo © 2022 Stack Exchange Inc; user contributions
+            licensed under
+            <span>
+              <a href="">CC BY-SA</a>
+            </span>
+            . <span>rev 2022.9.1.42957</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/sections/companies.js"></script>
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+</html>
