@@ -1,4 +1,4 @@
-const usersPhoto = document.querySelectorAll("#user");
+const usersPhoto = document.querySelectorAll("#userr");
 const userInfo = document.querySelector(".user-info");
 
 usersPhoto.forEach((user) => {
@@ -14,7 +14,7 @@ usersPhoto.forEach((user) => {
 
 // live search
 
-const input = document.querySelector(
+const inputt = document.querySelector(
   ".container__main-content__all--filtering--filter > input"
 );
 
@@ -23,7 +23,7 @@ const Users = document.querySelectorAll(
 );
 let NoResult = document.querySelector(".container__main-content__all__browser");
 
-input.addEventListener("input", (e) => {
+inputt.addEventListener("input", (e) => {
   let value = e.target.value.trim().toLowerCase();
 
   Users.forEach((user) => {
@@ -31,12 +31,12 @@ input.addEventListener("input", (e) => {
 
     let isVisible = userName.innerText.toLowerCase().trim().includes(value);
     user.classList.toggle("display-none", !isVisible);
-    if (!isVisible) {
-      console.log("if");
-      return (NoResult.style.display = "block");
-    } else {
-      console.log("none");
-      return (NoResult.style.display = "none");
-    }
+    // if (!isVisible) {
+    //   console.log("if");
+    //   return (NoResult.style.display = "block");
+    // } else {
+    //   console.log("none");
+    //   return (NoResult.style.display = "none");
+    // }
   });
 });
